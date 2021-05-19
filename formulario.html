@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Nosso singelo formulário </title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+        <form action="destino.php" method="post">
+            <p>
+                Nome:  <input type="text" name="username"/>
+            </p>
+            <p>
+                Email: <input type="text" name="email"/>
+            </p>
+            <p>
+                Qual sua data de Nascimento?
+                <input type="date" name="Nascimento"/>
+            </p>
+            <p>
+                Qual valor máximo investiria nesse móvel?
+                <input color="write" type="range" list="tickmarks">
+
+                <datalist name="Valor">
+                <option value="0" label="0%">
+                <option value="100">
+                <option value="200">
+                <option value="300">                
+                <option value="400">
+                <option value="500" label="50%">
+                <option value="600">
+                <option value="700">
+                <option value="800">
+                <option value="900">
+                <option value="1000">
+                <option value="3000">
+                <option value="5000" label="100%">
+                </datalist>
+            </p>
+            
+            <p>
+                <input type="submit" value="Enviar!" />
+            </p>
+
+        </form>
+
+    </body>
+</html>
